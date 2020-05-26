@@ -1,0 +1,16 @@
+version: "2"
+services:
+  app:
+    build: .
+    environment:
+      MONGO_URL: mongodb://mongoDb:27017/portfolio
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongoDb
+  mongoDb:
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - 27017:27017
