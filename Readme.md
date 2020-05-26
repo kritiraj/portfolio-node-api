@@ -1,11 +1,11 @@
-#portfolio-api
+# portfolio-api
 
-##Running the code
+## Running the code
 Run `yarn start:withMongo`
 
-##Tests
+## Tests
 
-###Frameworks
+### Frameworks
 
 - [Mocha]
 - [Chai]
